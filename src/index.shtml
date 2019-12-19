@@ -25,12 +25,148 @@
             <!-- 头部start -->
             <!--#include virtual="header.shtml"-->
             <!-- 头部end -->
-            <div class="">这是中部</div>
 
-            <!-- 尾部start -->
-            <!--#include virtual="footer.shtml"-->
-            <!-- 尾部end -->
+            <!-- 搜索栏 start -->
+            <div class="o_search o_g">
+                <div class="input_box o_g">
+                    <input type="text">
+                    <div class="searchbox">
+                        <img src="./images/searchicon.png" alt="">
+                        <span>搜索</span>
+                    </div>
+                </div>
+            </div>
+            <!-- 搜索栏 end -->
+
+            <!-- banner start -->
+            <div class="banner js_banner">
+                <div class="showbox">
+                    <ul class="o_g">
+                        <li class="o_u o_df_2-2 o_sm_1-2">
+                            <img src="./images/banner1.jpg" alt="">
+                        </li>
+                        <li class="o_u o_df_2-2 o_sm_1-2">
+                            <img class="o_lazy" df="./images/banner1.jpg" alt="">
+                        </li>
+                    </ul>
+                </div>
+                <!--分页-->
+                <ul class="pager js_pager"></ul>
+            </div>
+            <!-- banner end -->
+
+            <!-- 多功能分类 start -->
+            <div class="o_allclass">
+                <div class="o_g">
+                    <ul class="class_box">
+                        <li class="o_u">
+                            <img src="./images/jiadiancion.jpg" alt="">
+                            <p>家电百科</p>
+                        </li>
+                        <li class="o_u">
+                            <img src="./images/pingceicon.jpg" alt="">
+                            <p>海粉测评</p>
+                        </li>
+                        <li class="o_u">
+                            <img src="./images/huiyuanicon.jpg" alt="">
+                            <p>会员活动</p>
+                        </li>
+                        <li class="o_u">
+                            <img src="./images/dingzhiicon.jpg" alt="">
+                            <p>全屋定制</p>
+                        </li>
+                        <li class="o_u">
+                            <img src="./images/wendaicon.jpg" alt="">
+                            <p>海粉问答</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <!-- 多功能分类 end -->
+
+            <!-- 海尔头条 start -->
+            <div class="o_toutiao">
+                <div class="o_g">
+                    <div class="content">
+                        <div class="toutiao_title">
+                            <span>海尔头条</span>
+                            <a href="javascript:;">
+                                <span>更多</span>
+                                <img src="./images/moreicon.png" alt="">
+                            </a>
+                        </div>
+                        <div class="toutiao_bottom">
+                            <div class="bottom_left">
+                                <p>海尔以智家云脑开启智慧家庭主动服务4.0时代</p>
+                                <div class="chakan_dianzan_box">
+                                    <div class="chakan chakan_dianzan_box_item">
+                                        <img src="./images/chakanicon.png" alt="">
+                                        <span>1000</span>
+                                    </div>
+                                    <div class="dianzan chakan_dianzan_box_item">
+                                        <img src="./images/dianzanicon.png" alt="">
+                                        <span>1000</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bottom_right">
+                                <img src="./images/toutiaoimg.jpg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 海尔头条 end -->
+
+            <!-- 精选内容 start -->
+            <div class="o_jingxuan">
+                <div class="o_g">
+                    <div class="content">
+                        <p class="jingxuan_title">
+                            精选内容
+                        </p>
+                        <div class="jingxuan_list">
+                            <div class="jingxuan_item o_u">
+                                <div class="item_title">
+                                    <div class="img_box">
+                                        <img src="./images/avatargirl.jpg" alt="">
+                                    </div>
+                                    <span>木头先生</span>
+                                </div>
+                                <div class="item_content">
+                                    <img src="./images/jingxuanimg.jpg" alt="">
+                                </div>
+                                <div class="item_bottom">
+                                    <p>最好吃的一份番茄炒蛋诞生记</p>
+                                    <div class="guanjianzi_pinglun_box">
+                                        <div class="guanjianzi">
+                                            <a href="javascript:;" class="first_guanjianzi guanjian">厨房电器</a>
+                                            <a href="javascript:;" class="second_guanjianzi guanjian">#美食烹饪</a>
+                                        </div>
+                                        <div class="pinglun_dianzan">
+                                            <div class="pinglun_box pinglun_dianzan_item">
+                                                <img src="./images/pinglunicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                            <div class="dianzan_box pinglun_dianzan_item">
+                                                <img src="./images/dianzanicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 精选内容 end -->
         </div>
+
+        <!-- 尾部start -->
+        <!--#include virtual="footer.shtml"-->
+        <!-- 尾部end -->
+    </div>
     </div>
     <!-- js资源start -->
     <!-- js资源end -->

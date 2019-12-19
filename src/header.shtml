@@ -1,1 +1,8 @@
-<div>这是头部</div>
+<div class="header">
+    <div class="o_g headerbox">
+        <div class="title">
+            <img src="./images/headerback.png" alt="">
+            <span>海粉社区</span>
+        </div>
+    </div>
+</div>
