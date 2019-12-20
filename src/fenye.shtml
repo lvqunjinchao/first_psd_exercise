@@ -89,9 +89,32 @@
                             </div>
                         </div>
                         <div class="reply_center">
-                            <div class="empty_content">
+                            <div class="empty_content displaynone">
                                 <img src="./images/writepinglun.png" alt="">
                                 <p>快来说点什么吧</p>
+                            </div>
+                            <div class="reply_list">
+                                <div class="list_item">
+                                    <div class="user_avatar">
+                                        <img src="./images/avatargirl.jpg" alt="">
+                                    </div>
+                                    <div class="reply_details">
+                                        <p class="username">
+                                            王大锤
+                                        </p>
+                                        <p class="user_content">
+                                            这是一条测试评论 这是一条测试评论 这是一条测试评论 这是一条测试评论
+                                        </p>
+                                        <div class="other">
+                                            <span class="reply_time">12-20 10:15</span>
+                                            <div class="share_reply_dianzan">
+                                                <img src="./images/headershare.png" alt="" class="shareicon">
+                                                <img src="./images/fenyexiaoxi.png" alt="" class="pinglunicon">
+                                                <img src="./images/fenyedianzan.png" alt="" class="dianzanicon">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -102,6 +125,25 @@
             <!-- 尾部start -->
             <!--#include virtual="fenyefooter.shtml"-->
             <!-- 尾部end -->
+
+
+            <!-- 遮罩 start -->
+            <div class="zhezhao_div displaynone">
+                <!-- 输入文字 start -->
+                <div class="input_text_box">
+                    <div class="o_g">
+                        <div class="title">
+                            <span class="cancel">取消</span>
+                            <span class="determine">发送</span>
+                        </div>
+                        <div class="textarea_box">
+                            <textarea name="" id="" placeholder="说点什么吧..."></textarea>
+                        </div>
+                    </div>
+                </div>
+                <!-- 输入文字 end -->
+            </div>
+            <!-- 遮罩 end -->
         </div>
     </div>
     <!-- js资源start -->
