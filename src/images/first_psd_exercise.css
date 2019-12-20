@@ -1,3 +1,6 @@
+.displaynone {
+  display: none !important;
+}
 .header {
   width: 100%;
 }
@@ -57,6 +60,23 @@
   width: 3.2vw;
   height: 3.2vw;
   margin-right: 2vw;
+}
+.rush_load_box {
+  width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  background-color: #f5f5f5;
+  padding: 10.67vw 0 4.93vw 0;
+}
+.rush_load_box p {
+  color: #333333;
+  font-size: 2.67vw;
+  height: 2.67vw;
+  padding-top: 3.07vw;
+}
+.rush_load_box img {
+  width: 9.73vw;
+  height: 5.47vw;
 }
 .banner {
   height: auto;
@@ -188,6 +208,7 @@
 .o_jingxuan .content .jingxuan_list .jingxuan_item {
   padding-top: 3.2vw;
   padding-bottom: 3.73vw;
+  border-bottom: solid 0.13vw #eeeeee;
 }
 .o_jingxuan .content .jingxuan_list .jingxuan_item .item_title {
   padding-bottom: 3.2vw;
@@ -210,10 +231,61 @@
   color: #000000;
   height: 3.87vw;
 }
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content {
+  box-sizing: border-box;
+  padding-bottom: 6.67vw;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content .content_right {
+  margin-left: 3.2vw;
+}
 .o_jingxuan .content .jingxuan_list .jingxuan_item .item_content img {
   width: 87.2vw;
   height: 48.53vw;
   border-radius: 2.67vw;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.contentflex {
+  padding-top: 0.67vw;
+  display: flex;
+  justify-content: space-between;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.contentflex .content_right img {
+  width: 32vw;
+  height: 24vw;
+  border-radius: 2.67vw;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.contentflex .content_title {
+  font-size: 4vw;
+  line-height: 5.6vw;
+  height: 9.47vw;
+  color: #333333;
+  padding-bottom: 5.87vw;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.contentflex .content_content {
+  height: 7.73vw;
+  font-size: 3.2vw;
+  line-height: 4.53vw;
+  color: #666666;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.p_content {
+  padding-top: 0.93vw;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.p_content .p_content_title {
+  height: 3.87vw;
+  font-size: 4vw;
+  line-height: 3.6vw;
+  color: #333333;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.p_content .p_content_content_box {
+  border-radius: 2.67vw;
+  background-color: #f5f5f5;
+  padding: 4vw 4.27vw 3.6vw 4.13vw;
+  margin: 4.13vw 0;
+}
+.o_jingxuan .content .jingxuan_list .jingxuan_item .item_content.p_content .p_content_content_box .p_content_content {
+  height: 8.4vw;
+  font-size: 3.47vw;
+  line-height: 4.8vw;
+  color: #333333;
 }
 .o_jingxuan .content .jingxuan_list .jingxuan_item .item_bottom p {
   color: #333333;
@@ -265,4 +337,288 @@
 .o_jingxuan .content .jingxuan_list .jingxuan_item .item_bottom .guanjianzi_pinglun_box .pinglun_dianzan .pinglun_dianzan_item .dianzan_box img {
   width: 4vw;
   height: 3.6vw;
+}
+.fenyeheader {
+  width: 100%;
+}
+.fenyeheader .headerbox {
+  padding: 3.73vw 3.72vw;
+  background-color: #fff;
+}
+.fenyeheader .headerbox .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.fenyeheader .headerbox .title .fenyegoback {
+  left: 0.13vw;
+  height: 3.47vw;
+  width: 2.53vw;
+}
+.fenyeheader .headerbox .title .fenyeshare {
+  width: 5.47vw;
+  height: 5.73vw;
+}
+.fenyeheader .headerbox .title span {
+  font-size: 4.53vw;
+  color: #333333;
+}
+.wanzhuan {
+  width: 100%;
+  background-color: #f5f5f5;
+  box-sizing: border-box;
+  padding: 3.2vw 3.2vw 0 3.2vw;
+}
+.wanzhuan .head {
+  padding: 4.13vw 3.2vw 5.07vw 3.2vw;
+  background-color: #fff;
+  border-radius: 2.67vw;
+}
+.wanzhuan .head .title {
+  height: 4.67vw;
+  font-family: PingFang-SC-Bold;
+  font-size: 4.53vw;
+  line-height: 3.6vw;
+  color: #333333;
+}
+.wanzhuan .head .bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 4.67vw;
+}
+.wanzhuan .head .bottom .bottom_left {
+  display: flex;
+  justify-content: space-between;
+  width: auto;
+  align-items: center;
+}
+.wanzhuan .head .bottom .bottom_left img {
+  width: 8.67vw;
+  height: 8.53vw;
+  border-radius: 50%;
+  margin-right: 3.2vw;
+}
+.wanzhuan .head .bottom .bottom_left .name {
+  height: 3.87vw;
+  font-size: 4vw;
+  font-family: PingFang-SC-Regular;
+  line-height: 3.6vw;
+  color: #000000;
+  padding-bottom: 2.67vw;
+}
+.wanzhuan .head .bottom .bottom_left .time {
+  height: 2vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 2.67vw;
+  line-height: 3.6vw;
+  color: #999999;
+}
+.wanzhuan .head .bottom .bottom_right .guanzhu {
+  display: inline-block;
+  padding: 1.6vw 4.4vw;
+  height: 3.33vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 3.47vw;
+  line-height: 3.6vw;
+  color: #2283e2;
+  border-radius: 1.6vw;
+  border: solid 0.13vw #2283e2;
+}
+.wanzhuan .content_bottom {
+  margin-top: 3.2vw;
+  margin-bottom: 3.2vw;
+  width: 100%;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 2.67vw;
+}
+.wanzhuan .content {
+  padding: 4.13vw 3.33vw 0 3.2vw;
+}
+.wanzhuan .content .describe {
+  height: 20.67vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 4vw;
+  line-height: 5.6vw;
+  color: #666666;
+  padding-bottom: 3.07vw;
+}
+.wanzhuan .content .img_box img {
+  width: 87.2vw;
+  height: 48.53vw;
+  border-radius: 2.67vw;
+}
+.wanzhuan .wanzhuan_bottom {
+  padding-left: 3.2vw;
+  padding-right: 3.2vw;
+}
+.wanzhuan .guanjianzi_box {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5.87vw 0;
+}
+.wanzhuan .guanjianzi_box .guanjian {
+  height: 2.8vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 2.93vw;
+  padding: 0.8vw 0;
+  line-height: 3.6vw;
+  border-radius: 0.8vw;
+}
+.wanzhuan .guanjianzi_box .first_guanjianzi {
+  color: #2283e2;
+  padding-left: 1.47vw;
+  padding-right: 1.47vw;
+  border: solid 0.13vw #2283e2;
+  margin-right: 3.2vw;
+}
+.wanzhuan .guanjianzi_box .second_guanjianzi {
+  color: #f5a623;
+  padding-right: 1.33vw;
+  padding-left: 1.33vw;
+  border: solid 0.13vw #f5a623;
+}
+.wanzhuan .guanjianzi_box img {
+  width: 4.4vw;
+  height: 2.53vw;
+  margin-right: 1.47vw;
+}
+.wanzhuan .guanjianzi_box span {
+  height: 2.27vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 2.93vw;
+  line-height: 3.6vw;
+  color: #999999;
+}
+.reply {
+  box-sizing: border-box;
+  padding: 0 3.33vw 3.2vw 3.07vw;
+  background-color: #f5f5f5;
+}
+.reply .content {
+  box-sizing: border-box;
+  padding: 0 3.2vw;
+  background-color: #fff;
+  border-radius: 2.67vw;
+}
+.reply .content .reply_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.reply .content .reply_title .hot {
+  padding: 4.13vw 0 2.93vw 0;
+  height: 3.73vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 4vw;
+  color: #2283e2;
+  position: relative;
+}
+.reply .content .reply_title .all {
+  padding: 4.13vw 0 3.73vw 0;
+  height: 3.73vw;
+  position: relative;
+  font-size: 4vw;
+  color: #333333;
+}
+.reply .content .reply_title .hengxian {
+  position: absolute;
+  bottom: -0.8vw;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 6.4vw;
+  height: 0.8vw;
+  background-color: #2283e2;
+}
+.reply .content .reply_center {
+  min-height: 74.79vw;
+  box-sizing: border-box;
+  position: relative;
+  padding: 3.2vw 0;
+}
+.reply .content .reply_center .empty_content {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.reply .content .reply_center .empty_content img {
+  width: 16vw;
+  height: 16vw;
+}
+.reply .content .reply_center .empty_content p {
+  padding-top: 4.8vw;
+  height: 3.73vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 4vw;
+  line-height: 2.05vw;
+  color: #999999;
+}
+.fenyefooter {
+  padding: 2.27vw 3.2vw;
+  box-sizing: border-box;
+  width: 100%;
+}
+.fenyefooter .content {
+  background-color: #fff;
+  border-radius: 2.67vw;
+  padding-right: 3.2vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fenyefooter .content .pinglunnow {
+  position: relative;
+}
+.fenyefooter .content .pinglunnow input {
+  width: 46.67vw;
+  border: none;
+  height: 8.53vw;
+  background-color: #f5f5f5;
+  border-radius: 3.47vw;
+}
+.fenyefooter .content .pinglunnow .reply_detail {
+  position: absolute;
+  top: 50%;
+  left: 3.33vw;
+  transform: translateY(-50%);
+}
+.fenyefooter .content .pinglunnow .reply_detail img {
+  width: 4.13vw;
+  height: 3.3vw;
+  padding-right: 2.67vw;
+}
+.fenyefooter .content .pinglunnow .reply_detail span {
+  height: 3.6vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 3.73vw;
+  line-height: 3.6vw;
+  color: #999999;
+}
+.fenyefooter .content .pinglundianzai {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fenyefooter .content .pinglundianzai span {
+  height: 2.93vw;
+  font-family: PingFang-SC-Regular;
+  font-size: 3.73vw;
+  line-height: 3.6vw;
+  color: #333333;
+  padding-left: 2.67vw;
+}
+.fenyefooter .content .pinglundianzai .pinglun_box img {
+  width: 5.6vw;
+  height: 4.53vw;
+}
+.fenyefooter .content .pinglundianzai .dianzan_box {
+  padding-left: 3.6vw;
+}
+.fenyefooter .content .pinglundianzai .dianzan_box img {
+  width: 5.87vw;
+  height: 5.07vw;
 }

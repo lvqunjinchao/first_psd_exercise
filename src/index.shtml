@@ -38,6 +38,16 @@
             </div>
             <!-- 搜索栏 end -->
 
+            <!-- 下拉刷新，上拉加载 start -->
+            <div class="rush_load_box">
+                <div class="content">
+                    <img src="./images/loading.png" alt="">
+                    <p class="rush">下拉刷新</p>
+                    <p class="load displaynone">上拉加载</p>
+                </div>
+            </div>
+            <!-- 下拉刷新，上拉加载 end -->
+
             <!-- banner start -->
             <div class="banner js_banner">
                 <div class="showbox">
@@ -127,15 +137,17 @@
                         </p>
                         <div class="jingxuan_list">
                             <div class="jingxuan_item o_u">
-                                <div class="item_title">
-                                    <div class="img_box">
-                                        <img src="./images/avatargirl.jpg" alt="">
+                                <a href="./fenye.shtml">
+                                    <div class="item_title">
+                                        <div class="img_box">
+                                            <img src="./images/avatargirl.jpg" alt="">
+                                        </div>
+                                        <span>木头先生</span>
                                     </div>
-                                    <span>木头先生</span>
-                                </div>
-                                <div class="item_content">
-                                    <img src="./images/jingxuanimg.jpg" alt="">
-                                </div>
+                                    <div class="item_content">
+                                        <img src="./images/jingxuanimg.jpg" alt="">
+                                    </div>
+                                </a>
                                 <div class="item_bottom">
                                     <p>最好吃的一份番茄炒蛋诞生记</p>
                                     <div class="guanjianzi_pinglun_box">
@@ -156,17 +168,98 @@
                                     </div>
                                 </div>
                             </div>
+                            <div class="jingxuan_item o_u">
+                                <a href="./fenye.shtml">
+                                    <div class="item_title">
+                                        <div class="img_box">
+                                            <img src="./images/avatargirl.jpg" alt="">
+                                        </div>
+                                        <span>厨小白</span>
+                                    </div>
+                                    <div class="item_content contentflex">
+                                        <div class="content_left">
+                                            <p class="content_title">
+                                                如果朋友在家做出“杠把子”级别的美味烧
+                                            </p>
+                                            <p class="content_content">
+                                                出门在外，突然收到朋友要去你家做客的请求，可家中一片混乱。
+                                            </p>
+                                        </div>
+                                        <div class="content_right">
+                                            <img src="./images/xiaobaiimg.jpg" alt="">
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item_bottom">
+                                    <div class="guanjianzi_pinglun_box">
+                                        <div class="guanjianzi">
+                                            <a href="javascript:;" class="first_guanjianzi guanjian">冰箱</a>
+                                            <a href="javascript:;" class="second_guanjianzi guanjian">#美食烹饪</a>
+                                        </div>
+                                        <div class="pinglun_dianzan">
+                                            <div class="pinglun_box pinglun_dianzan_item">
+                                                <img src="./images/pinglunicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                            <div class="dianzan_box pinglun_dianzan_item">
+                                                <img src="./images/dianzanicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </di>
+                                </div>
+                            </div>
+                            <div class="jingxuan_item o_u">
+                                <a href="./fenye.shtml">
+
+                                    <div class="item_title">
+                                        <div class="img_box">
+                                            <img src="./images/avatargirl.jpg" alt="">
+                                        </div>
+                                        <span>鲨鱼pro</span>
+                                    </div>
+                                    <div class="item_content p_content">
+                                        <p class="p_content_title">
+                                            你有没有过这样的困扰
+                                        </p>
+                                        <div class="p_content_content_box">
+                                            <p class="p_content_content">
+                                                出门在外，突然收到朋友要去你家做客的请求，可家中一片混乱，实在不好意思让朋友见笑……
+                                            </p>
+                                        </div>
+                                    </div>
+                                </a>
+                                <div class="item_bottom">
+                                    <div class="guanjianzi_pinglun_box">
+                                        <div class="guanjianzi">
+                                            <a href="javascript:;" class="first_guanjianzi guanjian">冰箱</a>
+                                            <a href="javascript:;" class="second_guanjianzi guanjian">#美食烹饪</a>
+                                        </div>
+                                        <div class="pinglun_dianzan">
+                                            <div class="pinglun_box pinglun_dianzan_item">
+                                                <img src="./images/pinglunicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                            <div class="dianzan_box pinglun_dianzan_item">
+                                                <img src="./images/dianzanicon.png" alt="">
+                                                <span>1000</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </di>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
+                <!-- 精选内容 end -->
             </div>
-            <!-- 精选内容 end -->
-        </div>
 
-        <!-- 尾部start -->
-        <!--#include virtual="footer.shtml"-->
-        <!-- 尾部end -->
-    </div>
+            <!-- 尾部start -->
+            <!--#include virtual="footer.shtml"-->
+            <!-- 尾部end -->
+        </div>
     </div>
     <!-- js资源start -->
     <!-- js资源end -->

@@ -1,3 +1,10 @@
+// 公共类 start
+.displaynone {
+    display: none !important;
+}
+
+// 公共类 end
+// 主页 start
 // 头部 start
 .header {
     width: 100%;
@@ -64,6 +71,26 @@
 }
 
 // 搜索栏 end
+// 下拉刷新，上拉加载 start
+.rush_load_box {
+    width: 100%;
+    box-sizing: border-box;
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 10.67vw 0 4.93vw 0;
+    p {
+        color: #333333;
+        font-size: 2.67vw;
+        height: 2.67vw;
+        padding-top: 3.07vw;
+    }
+    img {
+        width: 9.73vw;
+        height: 5.47vw;
+    }
+}
+
+// 下拉刷新，上拉加载 end
 // banner start
 .banner {
     height: auto;
@@ -211,6 +238,7 @@
             .jingxuan_item {
                 padding-top: 3.2vw;
                 padding-bottom: 3.73vw;
+                border-bottom: solid 0.13vw #eeeeee;
                 .item_title {
                     padding-bottom: 3.2vw;
                     .img_box {
@@ -233,10 +261,59 @@
                     }
                 }
                 .item_content {
+                    box-sizing: border-box;
+                    padding-bottom: 6.67vw;
+                    .content_right {
+                        margin-left: 3.2vw;
+                    }
                     img {
                         width: 87.2vw;
                         height: 48.53vw;
                         border-radius: 2.67vw;
+                    }
+                }
+                .item_content.contentflex {
+                    padding-top: 0.67vw;
+                    display: flex;
+                    justify-content: space-between;
+                    .content_right img {
+                        width: 32vw;
+                        height: 24vw;
+                        border-radius: 2.67vw;
+                    }
+                    .content_title {
+                        font-size: 4vw;
+                        line-height: 5.6vw;
+                        height: 9.47vw;
+                        color: #333333;
+                        padding-bottom: 5.87vw;
+                    }
+                    .content_content {
+                        height: 7.73vw;
+                        font-size: 3.2vw;
+                        line-height: 4.53vw;
+                        color: #666666;
+                    }
+                }
+                .item_content.p_content {
+                    padding-top: 0.93vw;
+                    .p_content_title {
+                        height: 3.87vw;
+                        font-size: 4vw;
+                        line-height: 3.6vw;
+                        color: #333333;
+                    }
+                    .p_content_content_box {
+                        border-radius: 2.67vw;
+                        background-color: #f5f5f5;
+                        padding: 4vw 4.27vw 3.6vw 4.13vw;
+                        margin: 4.13vw 0;
+                        .p_content_content {
+                            height: 8.4vw;
+                            font-size: 3.47vw;
+                            line-height: 4.8vw;
+                            color: #333333;
+                        }
                     }
                 }
                 .item_bottom {
@@ -305,3 +382,303 @@
 }
 
 // 精选内容 end
+// 主页 end
+// 分页 start
+// 分页头部 start
+.fenyeheader {
+    width: 100%;
+    .headerbox {
+        padding: 3.73vw 3.72vw;
+        background-color: #fff;
+        .title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .fenyegoback {
+                left: 0.13vw;
+                height: 3.47vw;
+                width: 2.53vw;
+            }
+            .fenyeshare {
+                width: 5.47vw;
+                height: 5.73vw;
+            }
+            span {
+                font-size: 4.53vw;
+                color: #333333;
+            }
+        }
+    }
+}
+
+// 分页头部 end
+.wanzhuan {
+    width: 100%;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+    padding: 3.2vw 3.2vw 0 3.2vw;
+    .head {
+        padding: 4.13vw 3.2vw 5.07vw 3.2vw;
+        background-color: #fff;
+        border-radius: 2.67vw;
+        .title {
+            height: 4.67vw;
+            font-family: PingFang-SC-Bold;
+            font-size: 4.53vw;
+            line-height: 3.6vw;
+            color: #333333;
+        }
+        .bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 4.67vw;
+            .bottom_left {
+                display: flex;
+                justify-content: space-between;
+                width: auto;
+                align-items: center;
+                img {
+                    width: 8.67vw;
+                    height: 8.53vw;
+                    border-radius: 50%;
+                    margin-right: 3.2vw;
+                }
+                .name {
+                    height: 3.87vw;
+                    font-size: 4vw;
+                    font-family: PingFang-SC-Regular;
+                    line-height: 3.6vw;
+                    color: #000000;
+                    padding-bottom: 2.67vw;
+                }
+                .time {
+                    height: 2vw;
+                    font-family: PingFang-SC-Regular;
+                    font-size: 2.67vw;
+                    line-height: 3.6vw;
+                    color: #999999;
+                }
+            }
+            .bottom_right {
+                .guanzhu {
+                    display: inline-block;
+                    padding: 1.6vw 4.4vw;
+                    height: 3.33vw;
+                    font-family: PingFang-SC-Regular;
+                    font-size: 3.47vw;
+                    line-height: 3.6vw;
+                    color: #2283e2;
+                    border-radius: 1.6vw;
+                    border: solid 0.13vw #2283e2;
+                }
+            }
+        }
+    }
+    .content_bottom {
+        margin-top: 3.2vw;
+        margin-bottom: 3.2vw;
+        width: 100%;
+        box-sizing: border-box;
+        background-color: #fff;
+        border-radius: 2.67vw;
+    }
+    .content {
+        padding: 4.13vw 3.33vw 0 3.2vw;
+        .describe {
+            height: 20.67vw;
+            font-family: PingFang-SC-Regular;
+            font-size: 4vw;
+            line-height: 5.6vw;
+            color: #666666;
+            padding-bottom: 3.07vw;
+        }
+        .img_box img {
+            width: 87.2vw;
+            height: 48.53vw;
+            border-radius: 2.67vw;
+        }
+    }
+    .wanzhuan_bottom {
+        padding-left: 3.2vw;
+        padding-right: 3.2vw;
+    }
+    .guanjianzi_box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 5.87vw 0;
+        .guanjian {
+            height: 2.8vw;
+            font-family: PingFang-SC-Regular;
+            font-size: 2.93vw;
+            padding: 0.8vw 0;
+            line-height: 3.6vw;
+            border-radius: 0.8vw;
+        }
+        .first_guanjianzi {
+            color: #2283e2;
+            padding-left: 1.47vw;
+            padding-right: 1.47vw;
+            border: solid 0.13vw #2283e2;
+            margin-right: 3.2vw;
+        }
+        .second_guanjianzi {
+            color: #f5a623;
+            padding-right: 1.33vw;
+            padding-left: 1.33vw;
+            border: solid 0.13vw #f5a623;
+        }
+        img {
+            width: 4.4vw;
+            height: 2.53vw;
+            margin-right: 1.47vw;
+        }
+        span {
+            height: 2.27vw;
+            font-family: PingFang-SC-Regular;
+            font-size: 2.93vw;
+            line-height: 3.6vw;
+            color: #999999;
+        }
+    }
+}
+
+.reply {
+    box-sizing: border-box;
+    padding: 0 3.33vw 3.2vw 3.07vw;
+    background-color: #f5f5f5;
+    .content {
+        box-sizing: border-box;
+        padding: 0 3.2vw;
+        background-color: #fff;
+        border-radius: 2.67vw;
+        .reply_title {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            .hot {
+                padding: 4.13vw 0 2.93vw 0;
+                height: 3.73vw;
+                font-family: PingFang-SC-Regular;
+                font-size: 4vw;
+                color: #2283e2;
+                position: relative;
+            }
+            .all {
+                padding: 4.13vw 0 3.73vw 0;
+                height: 3.73vw;
+                position: relative;
+                font-size: 4vw;
+                color: #333333;
+            }
+            .hengxian {
+                position: absolute;
+                bottom: -0.8vw;
+                left: 50%;
+                transform: translateX(-50%);
+                width: 6.4vw;
+                height: 0.8vw;
+                background-color: #2283e2;
+            }
+        }
+        .reply_center {
+            min-height: 74.79vw;
+            box-sizing: border-box;
+            position: relative;
+            padding: 3.2vw 0;
+            .empty_content {
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                text-align: center;
+                img {
+                    width: 16vw;
+                    height: 16vw;
+                }
+                p {
+                    padding-top: 4.8vw;
+                    height: 3.73vw;
+                    font-family: PingFang-SC-Regular;
+                    font-size: 4vw;
+                    line-height: 2.05vw;
+                    color: #999999;
+                }
+            }
+        }
+    }
+}
+
+// 分页中部 end
+// 分页尾部 start
+.fenyefooter {
+    padding: 2.27vw 3.2vw;
+    box-sizing: border-box;
+    width: 100%;
+    .content {
+        background-color: #fff;
+        border-radius: 2.67vw;
+        padding-right: 3.2vw;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .pinglunnow {
+            position: relative;
+            input {
+                width: 46.67vw;
+                border: none;
+                height: 8.53vw;
+                background-color: #f5f5f5;
+                border-radius: 3.47vw;
+            }
+            .reply_detail {
+                position: absolute;
+                top: 50%;
+                left: 3.33vw;
+                transform: translateY(-50%);
+                img {
+                    width: 4.13vw;
+                    height: 3.3vw;
+                    padding-right: 2.67vw;
+                }
+                span {
+                    height: 3.6vw;
+                    font-family: PingFang-SC-Regular;
+                    font-size: 3.73vw;
+                    line-height: 3.6vw;
+                    color: #999999;
+                }
+            }
+        }
+        .pinglundianzai {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            span {
+                height: 2.93vw;
+                font-family: PingFang-SC-Regular;
+                font-size: 3.73vw;
+                line-height: 3.6vw;
+                color: #333333;
+                padding-left: 2.67vw;
+            }
+            .pinglun_box {
+                img {
+                    width: 5.6vw;
+                    height: 4.53vw;
+                }
+            }
+            .dianzan_box {
+                padding-left: 3.6vw;
+                img {
+                    width: 5.87vw;
+                    height: 5.07vw;
+                }
+            }
+        }
+    }
+}
+
+// 分页尾部 start
+// 分页 end

@@ -1,0 +1,11 @@
+<div class="fenyeheader">
+    <div class="o_g headerbox">
+        <div class="title">
+            <a href="./index.shtml">
+                <img src="./images/headerback.png" class="fenyegoback" alt="">
+            </a>
+            <span>智能互联</span>
+            <img src="./images/headershare.png" class="fenyeshare" alt="">
+        </div>
+    </div>
+</div>

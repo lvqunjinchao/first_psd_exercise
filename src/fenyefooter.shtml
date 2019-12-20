@@ -1,0 +1,23 @@
+<div class="fenyefooter">
+    <div class="o_g">
+        <div class="content">
+            <div class="pinglunnow">
+                <input type="text">
+                <div class="reply_detail">
+                    <img src="./images/writenow.png" alt="">
+                    <span>发表回复</span>
+                </div>
+            </div>
+            <div class="pinglundianzai">
+                <div class="pinglun_box pinglun_dianzan_item">
+                    <img src="./images/pinglunicon.png" alt="">
+                    <span>1000</span>
+                </div>
+                <div class="dianzan_box pinglun_dianzan_item">
+                    <img src="./images/dianzanicon.png" alt="">
+                    <span>1000</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
