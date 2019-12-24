@@ -26,17 +26,6 @@
             <!--#include virtual="header.shtml"-->
             <!-- 头部end -->
 
-            <!-- 搜索栏 start -->
-            <div class="o_search o_g">
-                <div class="input_box o_g">
-                    <input type="text">
-                    <div class="searchbox">
-                        <img src="./images/searchicon.png" alt="">
-                        <span>搜索</span>
-                    </div>
-                </div>
-            </div>
-            <!-- 搜索栏 end -->
 
             <!-- 下拉刷新，上拉加载 start -->
             <div class="rush_load_box displaynone">
@@ -48,7 +37,7 @@
             </div>
             <!-- 下拉刷新，上拉加载 end -->
             <div id="wrapper">
-                <div id="scroller" class="relative">
+                <div id="scroller">
                     <div id="pullDown">
                         <span class="pullDownLabel">下拉刷新</span>
                     </div>
@@ -154,11 +143,12 @@
                     <div id="pullUp">
                         <span class="pullUpLabel">上拉加载更多</span>
                     </div>
+
+                    <!-- 尾部start -->
+                    <!--#include virtual="footer.shtml"-->
+                    <!-- 尾部end -->
                 </div>
             </div>
-            <!-- 尾部start -->
-            <!--#include virtual="footer.shtml"-->
-            <!-- 尾部end -->
         </div>
     </div>
     <!-- js资源start -->

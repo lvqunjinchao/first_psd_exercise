@@ -73,7 +73,7 @@ function loaded() {
 }
 document.addEventListener('touchmove', function(e) {
     e.preventDefault();
-}, false); //阻止冒泡
+}, { passive: false }); //阻止冒泡默认事件
 document.addEventListener('DOMContentLoaded', function() {
     setTimeout(loaded, 0);
 }, false);
@@ -87,6 +87,8 @@ function loadAction() {
 // 调取主页ajax封装成函数 start
 function zhuye_ajax() {
     $.ajax({
+        // ajax一般不使用同步，因为会出问题，当数据大量的时候，可免会非常卡顿
+        // async: false,
         url: "../images/zhuye_ajax.json", //json文件位置,必须从images开始写
         type: "GET", //请求方式为get
         dataType: "json", //返回数据格式为json
@@ -217,9 +219,10 @@ function zhuye_ajax() {
             });
             // html方法会把无弄没有，所以用append来添加，无是默认的
             $('#thelist').append(html);
+            myScroll.refresh();
         }
     })
-    myScroll.refresh();
+
 }
 
 // 调取主页ajax封装成函数 end

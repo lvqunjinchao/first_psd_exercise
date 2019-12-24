@@ -5,4 +5,15 @@
             <span>海粉社区</span>
         </div>
     </div>
+    <!-- 搜索栏 start -->
+    <div class="o_search o_g">
+        <div class="input_box o_g">
+            <input type="text">
+            <div class="searchbox">
+                <img src="./images/searchicon.png" alt="">
+                <span>搜索</span>
+            </div>
+        </div>
+    </div>
+    <!-- 搜索栏 end -->
 </div>

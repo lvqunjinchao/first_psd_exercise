@@ -12,6 +12,10 @@
 // 头部 start
 .header {
     width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: auto;
     .headerbox {
         padding: 3.73vw 3.72vw;
         background-color: #f5f5f5;
@@ -222,29 +226,14 @@
 
 // 海尔头条 end
 // 精选内容 start
-#wrapper {
-    position: absolute;
-    top: 100px;
-    bottom: 0
-}
-
+#wrapper {position:absolute;top:24vw; bottom:0;left:0;width:100%;}
+#scroller li {height:auto;}
+#pullDown, #pullUp {height:30px;font-size: 3.2vw;color:#888;background-color: #f5f5f5;;text-align:center}
 .o_jingxuan {
     width: 100%;
     padding: 0 3.2vw;
     background-color: #f5f5f5;
     box-sizing: border-box;
-    #pullDown {
-        text-align: center;
-        .pullDownLabel {
-            font-size: 4.53vw;
-        }
-    }
-    #pullUp {
-        text-align: center;
-        .pullUpLabel {
-            font-size: 4.53vw;
-        }
-    }
     .content {
         border-radius: 2.67vw;
         padding: 0 3.33vw 0 3.07vw;
