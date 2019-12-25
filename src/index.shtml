@@ -26,21 +26,17 @@
             <!--#include virtual="header.shtml"-->
             <!-- 头部end -->
 
+            <!-- 滚动模块 start -->
 
-            <!-- 下拉刷新，上拉加载 start -->
-            <div class="rush_load_box displaynone">
-                <div class="content">
-                    <img src="./images/loading.png" alt="">
-                    <p class="rush pullDownLabel">下拉刷新</p>
-                    <p class="load displaynone pullUpLabel">上拉加载</p>
-                </div>
-            </div>
-            <!-- 下拉刷新，上拉加载 end -->
             <div id="wrapper">
                 <div id="scroller">
+                    <!-- 下拉加载 start -->
                     <div id="pullDown">
+                        <img src="./images/loading.png" alt="">
                         <span class="pullDownLabel">下拉刷新</span>
                     </div>
+                    <!-- 下拉加载 end -->
+
                     <!-- banner start -->
                     <div class="banner js_banner">
                         <div class="showbox">
@@ -141,7 +137,7 @@
                         <!-- 精选内容 end -->
                     </div>
                     <div id="pullUp">
-                        <span class="pullUpLabel">上拉加载更多</span>
+                        <span class="pullUpLabel"></span>
                     </div>
 
                     <!-- 尾部start -->
@@ -149,6 +145,8 @@
                     <!-- 尾部end -->
                 </div>
             </div>
+
+            <!-- 滚动模块 end -->
         </div>
     </div>
     <!-- js资源start -->

@@ -25,92 +25,47 @@
             <!-- 头部start -->
             <!--#include virtual="fenyeheader.shtml"-->
             <!-- 头部end -->
-
-            <!-- 玩转 start -->
-            <div class="wanzhuan">
-                <div class="o_g">
-                    <div class="head">
-                        <div class="title">
-                            一句话，教你玩转AI小优助手
-                        </div>
-                        <div class="bottom">
-                            <div class="bottom_left">
-                                <img src="./images/avatargirl.jpg" alt="">
-                                <div class="name_time">
-                                    <p class="name">大福</p>
-                                    <p class="time">11-15 14:28</p>
+            <div id="wrapper2">
+                <div id="scroller">
+                    <!-- 玩转 start -->
+                    <div class="wanzhuan">
+                        <div class="o_g">
+                            <div class="head">
+                                <div class="title">
+                                    一句话，教你玩转AI小优助手
                                 </div>
-                            </div>
-                            <div class="bottom_right">
-                                <span class="guanzhu">关注</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="content_bottom">
-                        <div class="content">
-                            <p class="describe">
-                                作为智慧家庭引领者的海尔，在为人类打造优质舒适、智能科技的生活方式上，未曾有一刻停步，小优语音助手应运而生，毕竟能为你控制家电还能为你排忧解难的小可爱谁会不爱呢？
-                            </p>
-                            <div class="img_box">
-                                <img src="./images/fenyeimg.jpg" alt="">
-                            </div>
-                        </div>
-                        <div class="wanzhuan_bottom">
-                            <div class="guanjianzi_box">
-                                <div class="guanjianzi">
-                                    <a href="javascript:;" class="first_guanjianzi guanjian">冰箱</a>
-                                    <a href="javascript:;" class="second_guanjianzi guanjian">#美食烹饪</a>
-                                </div>
-                                <div class="chakan_dianzan">
-                                    <div class="chakan_box">
-                                        <img src="./images/chakanicon.png" alt="">
-                                        <span>1000</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- 玩转 end -->
-
-            <!-- 回复 start -->
-            <div class="reply">
-                <div class="o_g">
-                    <div class="content">
-                        <div class="reply_title">
-                            <div class="hot">
-                                热门回复
-                                <div class="hengxian"></div>
-                            </div>
-                            <div class="all">
-                                全部回复
-                                <div class="hengxian displaynone"></div>
-                            </div>
-                        </div>
-                        <div class="reply_center">
-                            <div class="empty_content displaynone">
-                                <img src="./images/writepinglun.png" alt="">
-                                <p>快来说点什么吧</p>
-                            </div>
-                            <div class="reply_list">
-                                <div class="list_item">
-                                    <div class="user_avatar">
+                                <div class="bottom">
+                                    <div class="bottom_left">
                                         <img src="./images/avatargirl.jpg" alt="">
+                                        <div class="name_time">
+                                            <p class="name">大福</p>
+                                            <p class="time">11-15 14:28</p>
+                                        </div>
                                     </div>
-                                    <div class="reply_details">
-                                        <p class="username">
-                                            王大锤
-                                        </p>
-                                        <p class="user_content">
-                                            这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论这是一条测试评论
-                                        </p>
-                                        <div class="other">
-                                            <span class="reply_time">12-20 10:15</span>
-                                            <div class="share_reply_dianzan">
-                                                <img src="./images/headershare.png" alt="" class="shareicon">
-                                                <img src="./images/fenyexiaoxi.png" alt="" class="pinglunicon">
-                                                <img src="./images/fenyedianzan.png" alt="" class="dianzanicon">
+                                    <div class="bottom_right">
+                                        <span class="guanzhu">关注</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="content_bottom">
+                                <div class="content">
+                                    <p class="describe">
+                                        作为智慧家庭引领者的海尔，在为人类打造优质舒适、智能科技的生活方式上，未曾有一刻停步，小优语音助手应运而生，毕竟能为你控制家电还能为你排忧解难的小可爱谁会不爱呢？
+                                    </p>
+                                    <div class="img_box">
+                                        <img src="./images/fenyeimg.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="wanzhuan_bottom">
+                                    <div class="guanjianzi_box">
+                                        <div class="guanjianzi">
+                                            <a href="javascript:;" class="first_guanjianzi guanjian">冰箱</a>
+                                            <a href="javascript:;" class="second_guanjianzi guanjian">#美食烹饪</a>
+                                        </div>
+                                        <div class="chakan_dianzan">
+                                            <div class="chakan_box">
+                                                <img src="./images/chakanicon.png" alt="">
+                                                <span>1000</span>
                                             </div>
                                         </div>
                                     </div>
@@ -118,10 +73,42 @@
                             </div>
                         </div>
                     </div>
+                    <!-- 玩转 end -->
+
+                    <!-- 回复 start -->
+                    <div class="reply">
+                        <div class="o_g">
+                            <div class="content">
+                                <div class="reply_title">
+                                    <div class="hot">
+                                        热门回复
+                                        <div class="hengxian"></div>
+                                    </div>
+                                    <div class="all">
+                                        全部回复
+                                        <div class="hengxian displaynone"></div>
+                                    </div>
+                                </div>
+                                <div class="reply_center">
+                                    <div class="empty_content js_empty_content displaynone">
+                                        <img src="./images/writepinglun.png" alt="">
+                                        <p>快来说点什么吧</p>
+                                    </div>
+                                    <div class="reply_list">
+                                        <ul id="thelist2">
+
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 回复 end -->
+                    <div id="pullUp">
+                        <span class="pullUpLabel "></span>
+                    </div>
                 </div>
             </div>
-            <!-- 回复 end -->
-
             <!-- 尾部start -->
             <!--#include virtual="fenyefooter.shtml"-->
             <!-- 尾部end -->
@@ -151,7 +138,9 @@
     <!-- 本地页面独立js start -->
     <script type="text/javascript" src="./images/jquery-1.8.3.min.js"></script>
     <script type="text/javascript" src="./images/obox-min.js"></script>
-    <script type="text/javascript" src="./images/first_psd_exercise.js"></script>
+    <script type="text/javascript" src="./images/iscroll.js"></script>
+    <script type="text/javascript" src="./images/fenye.js"></script>
+
 
     <!-- 本页面独立js end -->
 </body>

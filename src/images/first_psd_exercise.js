@@ -1,3 +1,5 @@
+// 主页 start
+
 // banner图 start
 var bannerSlider = $(".js_banner").oSlider({
     loop: true,
@@ -16,6 +18,13 @@ bannerSlider.init();
 
 
 // 上拉加载下拉刷新 start
+
+// 模拟page页
+var page = 1;
+// 判断时候还有页面数据
+var allpages = false;
+// //初始状态，加载数据
+
 var myScroll, pullDownEl, pullDownOffset, pullUpEl, pullUpOffset, generatedCount = 0;
 
 function loaded() {
@@ -33,7 +42,7 @@ function loaded() {
                 pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';
             } else if (pullUpEl.className.match('loading')) {
                 pullUpEl.className = '';
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '上拉加载更多';
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '';
             }
         },
         onScrollMove: function() {
@@ -44,15 +53,19 @@ function loaded() {
                 this.minScrollY = 0;
             } else if (this.y < 5 && pullDownEl.className.match('flip')) {
                 pullDownEl.className = '';
-                pullDownEl.querySelector('.pullDownLabel').innerHTML = 'Pull down to refresh...';
+                pullDownEl.querySelector('.pullDownLabel').innerHTML = '下拉刷新';
                 this.minScrollY = -pullDownOffset;
             } else if (this.y < (this.maxScrollY - 5) && !pullUpEl.className.match('flip')) {
                 pullUpEl.className = 'flip';
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '释放刷新';
+                if (allpages) {
+                    $('.pullUpLabel').text('暂无数据');
+                } else {
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '释放刷新';
+                }
                 this.maxScrollY = this.maxScrollY;
             } else if (this.y > (this.maxScrollY + 5) && pullUpEl.className.match('flip')) {
                 pullUpEl.className = '';
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = 'Pull up to load more...';
+                pullUpEl.querySelector('.pullUpLabel').innerHTML = '';
                 this.maxScrollY = pullUpOffset;
             }
         },
@@ -63,7 +76,11 @@ function loaded() {
                 pullDownAction(); // Execute custom function (ajax call?)
             } else if (pullUpEl.className.match('flip')) {
                 pullUpEl.className = 'loading';
-                pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中';
+                if (allpages) {
+                    $('.pullUpLabel').text('');
+                } else {
+                    pullUpEl.querySelector('.pullUpLabel').innerHTML = '加载中';
+                }
                 pullUpAction(); // Execute custom function (ajax call?)
             }
         }
@@ -78,11 +95,6 @@ document.addEventListener('DOMContentLoaded', function() {
     setTimeout(loaded, 0);
 }, false);
 
-// //初始状态，加载数据
-function loadAction() {
-    zhuye_ajax();
-    myScroll.refresh();
-}
 
 // 调取主页ajax封装成函数 start
 function zhuye_ajax() {
@@ -94,6 +106,7 @@ function zhuye_ajax() {
         dataType: "json", //返回数据格式为json
         success: function(data) { //请求成功完成后要执行的方法 
             // console.log(data);
+            ++page;
             var html = '';
             $.each(data.jingxuan, function(index, item) {
                 // 注意！select值(value)就等于选中option的值，可以找到category_id直接赋值就行，不用转换了
@@ -227,10 +240,19 @@ function zhuye_ajax() {
 
 // 调取主页ajax封装成函数 end
 
+
+function loadAction() {
+    zhuye_ajax();
+    myScroll.refresh();
+}
+
+
 //下拉刷新当前数据
+// 注意：因为每一次下拉刷新都要将内容清空添加新的，所以不要判断是否还有数据，默认有数据，否则会造成默认为空
 function pullDownAction() {
     setTimeout(function() {
         //这里执行刷新操作
+        $('#thelist').empty();
         zhuye_ajax();
         myScroll.refresh();
     }, 400);
@@ -239,8 +261,17 @@ function pullDownAction() {
 //上拉加载更多数据
 function pullUpAction() {
     setTimeout(function() {
+        if (allpages) {
+            myScroll.refresh();
+            return;
+        }
         zhuye_ajax();
         myScroll.refresh();
+        if (page > 3) {
+            allpages = true;
+        }
     }, 400);
 }
 // 上拉加载下拉刷新 end
+
+// 主页 end

@@ -4,16 +4,19 @@
 .relative {
   position: relative;
 }
+.o_main {
+  background-color: #f5f5f5;
+}
 .header {
   width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   height: auto;
+  background-color: #fff;
 }
 .header .headerbox {
   padding: 3.73vw 3.72vw;
-  background-color: #f5f5f5;
 }
 .header .headerbox .title {
   position: relative;
@@ -69,28 +72,10 @@
   height: 3.2vw;
   margin-right: 2vw;
 }
-.rush_load_box {
-  width: 100%;
-  box-sizing: border-box;
-  text-align: center;
-  background-color: #f5f5f5;
-  padding: 10.67vw 0 4.93vw 0;
-}
-.rush_load_box p {
-  color: #333333;
-  font-size: 2.67vw;
-  height: 2.67vw;
-  padding-top: 3.07vw;
-}
-.rush_load_box img {
-  width: 9.73vw;
-  height: 5.47vw;
-}
 .banner {
   height: auto;
   box-sizing: border-box;
   padding: 3.2vw 3.33vw 3.2vw 3.07vw;
-  background-color: #f5f5f5;
 }
 .banner .showbox {
   width: 100%;
@@ -103,7 +88,6 @@
   width: 100%;
   box-sizing: border-box;
   padding: 2.4vw 6.13vw 3.2vw 6.13vw;
-  background-color: #f5f5f5;
 }
 .o_allclass .class_box {
   display: flex;
@@ -126,7 +110,6 @@
   width: 100%;
   box-sizing: border-box;
   padding: 3.2vw 3.07vw 3.2vw 3.33vw;
-  background-color: #f5f5f5;
 }
 .o_toutiao .content {
   background-color: #fff;
@@ -200,22 +183,53 @@
   bottom: 0;
   left: 0;
   width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 3.2vw;
+}
+#wrapper2 {
+  position: absolute;
+  top: 13.5vw;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 14vw;
 }
 #scroller li {
   height: auto;
 }
-#pullDown,
-#pullUp {
-  height: 30px;
-  font-size: 3.2vw;
-  color: #888;
-  background-color: #f5f5f5;
+#pullDown {
+  padding: 10.67vw 0 4.93vw 0;
+  width: 100%;
+  box-sizing: border-box;
   text-align: center;
+}
+#pullDown span {
+  display: block;
+  text-align: center;
+  color: #333333;
+  font-size: 2.67vw;
+  height: 2.67vw;
+  padding-top: 3.07vw;
+}
+#pullDown img {
+  width: 9.73vw;
+  height: 5.47vw;
+}
+#pullUp {
+  padding: 0;
+}
+#pullUp span {
+  box-sizing: border-box;
+  display: block;
+  text-align: center;
+  color: #333333;
+  font-size: 3.2vw;
+  height: auto;
 }
 .o_jingxuan {
   width: 100%;
   padding: 0 3.2vw;
-  background-color: #f5f5f5;
   box-sizing: border-box;
 }
 .o_jingxuan .content {
@@ -234,7 +248,7 @@
 .o_jingxuan .content .jingxuan_list .jingxuan_item {
   padding-top: 3.2vw;
   padding-bottom: 3.73vw;
-  border-bottom: solid 0.13vw #eeeeee;
+  border-bottom: solid 1px #eeeeee;
 }
 .o_jingxuan .content .jingxuan_list .jingxuan_item .item_title {
   padding-bottom: 3.2vw;
@@ -391,7 +405,6 @@
 }
 .wanzhuan {
   width: 100%;
-  background-color: #f5f5f5;
   box-sizing: border-box;
   padding: 3.2vw 3.2vw 0 3.2vw;
 }
@@ -520,8 +533,7 @@
 }
 .reply {
   box-sizing: border-box;
-  padding: 0 3.33vw 3.2vw 3.07vw;
-  background-color: #f5f5f5;
+  padding: 0 3.33vw 2.2vw 3.07vw;
 }
 .reply .content {
   box-sizing: border-box;
@@ -562,7 +574,7 @@
   min-height: 74.79vw;
   box-sizing: border-box;
   position: relative;
-  padding: 3.2vw 0;
+  padding: 3.2vw 0 0 0;
 }
 .reply .content .reply_center .empty_content {
   position: absolute;
@@ -585,6 +597,8 @@
 }
 .reply .content .reply_center .reply_list .list_item {
   display: flex;
+  padding: 3.2vw 0;
+  border-bottom: 1px solid #eeeeee;
   box-sizing: border-box;
 }
 .reply .content .reply_center .reply_list .list_item .user_avatar {
@@ -653,7 +667,7 @@
 }
 .input_text_box .title {
   display: flex;
-  border-bottom: solid 0.13vw #eeeeee;
+  border-bottom: solid 1px #eeeeee;
   justify-content: space-between;
   align-items: center;
   padding: 3.73vw 3.07vw 3.73vw 2.53vw;
@@ -676,7 +690,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 5.87vw 6.8vw 6.13vw;
-  border-bottom: solid 0.13vw #eeeeee;
+  border-bottom: solid 1px #eeeeee;
 }
 .input_text_box .textarea_box textarea {
   width: 100%;
@@ -689,6 +703,9 @@
   padding: 2.27vw 3.2vw;
   box-sizing: border-box;
   width: 100%;
+  background-color: #fff;
+  position: absolute;
+  bottom: 0;
 }
 .fenyefooter .content {
   background-color: #fff;
