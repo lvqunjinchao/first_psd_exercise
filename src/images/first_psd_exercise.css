@@ -610,6 +610,9 @@
   height: 8.53vw;
   border-radius: 50%;
 }
+.reply .content .reply_center .reply_list .list_item .reply_details {
+  width: 100%;
+}
 .reply .content .reply_center .reply_list .list_item .reply_details .username {
   height: 3.87vw;
   font-family: PingFang-SC-Regular;
