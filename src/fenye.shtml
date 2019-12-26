@@ -76,7 +76,7 @@
                     <!-- 玩转 end -->
 
                     <!-- 回复 start -->
-                    <div class="reply">
+                    <div class="reply js_reply">
                         <div class="o_g">
                             <div class="content">
                                 <div class="reply_title">
@@ -115,15 +115,15 @@
 
 
             <!-- 遮罩 start -->
-            <div class="zhezhao_div displaynone">
+            <div class="zhezhao_div js_zhezhao_div displaynone">
                 <!-- 输入文字 start -->
-                <div class="input_text_box">
+                <div class="input_text_box js_input_text_box">
                     <div class="o_g">
-                        <div class="title">
-                            <span class="cancel">取消</span>
-                            <span class="determine">发送</span>
+                        <div class="title js_title">
+                            <span class="cancel js_cancel">取消</span>
+                            <span class="determine js_determine">发送</span>
                         </div>
-                        <div class="textarea_box">
+                        <div class="textarea_box js_textarea_box">
                             <textarea name="" id="" placeholder="说点什么吧..."></textarea>
                         </div>
                     </div>

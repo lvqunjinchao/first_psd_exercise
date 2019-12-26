@@ -1,5 +1,7 @@
 // 分页 start
 
+// 分页滚动 start
+
 // 声明page计算页数
 var page = 1;
 // 判断上拉加载回复是否还有数据
@@ -17,8 +19,8 @@ function fenye_ajax() {
         type: "GET", //请求方式为get
         dataType: "json", //返回数据格式为json
         success: function(data) { //请求成功完成后要执行的方法 
-            console.log(data);
-            console.log(data.reply.length);
+            // console.log(data);
+            // console.log(data.reply.length);
             if (data.reply.length == 0) {
                 $('.js_empty_content').removeClass('displaynone');
                 havedata = false;
@@ -135,5 +137,89 @@ function pullUpAction() {
     }, 400);
 }
 
+// 分页滚动 end
+
+// 分页手机虚拟键盘 start
+
+// 点击input显示遮罩和输入框
+$('.js_fenyefooter').on('click', '.pinglunnow', function() {
+    var $this = $(this);
+    if (temporary_text == '') {
+        $this.parents('.js_fenyefooter').siblings('.js_zhezhao_div').find('textarea').val('');
+    } else {
+        $this.parents('.js_fenyefooter').siblings('.js_zhezhao_div').find('textarea').val(temporary_text);
+    }
+    $this.parents('.js_fenyefooter').siblings('.js_zhezhao_div').removeClass('displaynone');
+    $this.parents('.js_fenyefooter').siblings('.js_zhezhao_div').find('textarea').focus();
+});
+
+// 声明一个变量来暂时存储取消输入的内容
+var temporary_text = '';
+// 声明一个变量来存储发送的内容
+var determine_text = '';
+// 点击,取消，发送或者黑色遮罩关闭遮罩 start
+// 阻止内部的冒泡事件
+$('.js_zhezhao_div').on('click', '.js_input_text_box', function(e) {
+    e.stopPropagation();
+});
+//取消
+$('.js_zhezhao_div').on('click', '.js_cancel', function() {
+    var $this = $(this);
+    temporary_text = $this.parents('.js_title').siblings('.js_textarea_box').find('textarea').val();
+    $this.parents('.js_zhezhao_div').addClass('displaynone');
+});
+
+// 声明一个变量获取当前位置到头部的距离
+var reply_top = $('.js_reply').offset().top;
+
+// 发送
+$('.js_zhezhao_div').on('click', '.js_determine', function() {
+    var $this = $(this);
+    determine_text = $this.parents('.js_title').siblings('.js_textarea_box').find('textarea').val();
+    temporary_text = '';
+    $this.parents('.js_zhezhao_div').addClass('displaynone');
+    send_out();
+    // 使页面回滚到评论顶部
+    myScroll.scrollToElement('.js_reply', 100, 0, reply_top, true);
+});
+
+// 黑色遮罩
+$('.js_zhezhao_div').on('click', function() {
+    var $this = $(this);
+    temporary_text = $this.find('textarea').val();
+    $this.addClass('displaynone');
+});
+// 点击,取消，发送或者黑色遮罩关闭遮罩 end
+
+// 点击发送模拟添加信息 封装成函数 start
+function send_out() {
+    var send_out_content = '';
+    send_out_content = `<li class="list_item">
+				<div class="user_avatar">
+					<img src="./images/avatargirl.jpg" alt="">
+				</div>
+				<div class="reply_details">
+					<p class="username">
+					刚刚发表的评论
+					</p>
+					<p class="user_content">
+					${determine_text}
+					</p>
+					<div class="other">
+						<span class="reply_time">12.20 11:30</span>
+						<div class="share_reply_dianzan">
+							<img src="./images/pinglunicon.png" alt="" class="shareicon">
+							<img src="./images/fenyedianzan.png" alt="" class="pinglunicon">
+							<img src="./images/headershare.png" alt="" class="dianzanicon">
+						</div>
+					</div>
+				</div>
+            </li>`
+    $('#thelist2').prepend(send_out_content);
+    myScroll.refresh();
+}
+// 点击发送模拟添加信息 封装成函数 end
+
+// 分页手机虚拟键盘 end
 
 // 分页 end
