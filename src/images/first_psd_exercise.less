@@ -16,44 +16,45 @@
 }
 
 // 单行文本显示
-.limit1{
+.limit1 {
     overflow: hidden;
-    text-overflow:ellipsis;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
+
 // 定义两行内容限制，多的省略号显示
 .limit2 {
-    overflow : hidden;
-    text-overflow: ellipsis;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
 }
 
 // 定义三行内容限制，多的省略号显示
 .limit3 {
-    overflow: hidden;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    -webkit-line-clamp: 3;
-    -webkit-box-orient: vertical;
-    white-space: normal;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2; 
 }
 
 // 声明字体,测试用
 @font-face {
     font-family: '喵喵体';
     /* format("truetype")是根据每一个的文件类型类判断的 */
-    src: url(./fonts/DFPShaoNvW5-GB.ttf) format("truetype");
+    src: url(./fonts/PingFangSCRegular.ttf) format("truetype");
 }
 
-// *{
-//     font-family:'喵喵体' !important;
-// }
-// 和设计图一个字体
-*{
-    font-family: PingFang-SC-Regular !important;
+* {
+    font-family: '喵喵体' !important;
 }
+
+// 和设计图一个字体
+// *{
+//     font-family: PingFang-SC-Regular !important;
+// }
 // 公共类 end
 // 主页 start
 // 头部 start
@@ -395,12 +396,12 @@
                     .content_title {
                         font-size: 4vw;
                         line-height: 5.6vw;
-                        height: 9.47vw;
+                        height: 10.3vw;
                         color: #333333;
                         margin-bottom: 5.87vw;
                     }
                     .content_content {
-                        height: 7.73vw;
+                        height: 8.13vw;
                         font-size: 3.2vw;
                         line-height: 4.53vw;
                         color: #666666;
