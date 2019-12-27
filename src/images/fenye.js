@@ -26,7 +26,6 @@ function fenye_ajax() {
                 havedata = false;
                 return;
             };
-            ++page;
             $('.js_empty_content').addClass('displaynone');
             var html2 = '';
             $.each(data.reply, function(index, item) {
@@ -131,6 +130,7 @@ function pullUpAction() {
         }
         fenye_ajax();
         myScroll.refresh();
+        ++page;
         if (page > 3) {
             allpages = true;
         }
@@ -157,10 +157,47 @@ $('.js_fenyefooter').on('click', '.pinglunnow', function() {
 var temporary_text = '';
 // 声明一个变量来存储发送的内容
 var determine_text = '';
+
+
+// 全部回复选项卡替换 start
+$('.js_reply_title').on('click', '.js_all', function() {
+    var $this = $(this);
+    $this.addClass('color2283e2');
+    $this.find('.hengxian').removeClass('displaynone');
+    $this.siblings('.js_hot').removeClass('color2283e2');
+    $this.siblings('.js_hot').find('.hengxian').addClass('displaynone');
+    // 有数据时候
+    $('#thelist2').empty();
+    fenye_ajax();
+    havedata = false;
+});
+// 全部回复选项卡替换 end
+
+// 热门回复默认就是选中的，但是点击全部回复之后再点击热门需要判断 start
+$('.js_reply_title').on('click', '.js_hot', function() {
+    var $this = $(this);
+    $this.addClass('color2283e2');
+    $this.find('.hengxian').removeClass('displaynone');
+    $this.siblings('.js_all').removeClass('color2283e2');
+    $this.siblings('.js_all').find('.hengxian').addClass('displaynone');
+    // 有数据时候
+    $('#thelist2').empty();
+    fenye_ajax();
+    havedata = true;
+    page = 1;
+    allpages = false;
+});
+// 热门回复默认就是选中的，但是点击全部回复之后再点击热门需要判断 end
+
+
 // 点击,取消，发送或者黑色遮罩关闭遮罩 start
 // 阻止内部的冒泡事件
 $('.js_zhezhao_div').on('click', '.js_input_text_box', function(e) {
     e.stopPropagation();
+    // 手机端会有判断，只要是有焦点，就会弹出虚拟键盘，所以在输入框中点击除了取消，发送外，
+    // 其他地方仍然要保持有焦点
+    var $this = $(this);
+    $this.find('textarea').focus();
 });
 //取消
 $('.js_zhezhao_div').on('click', '.js_cancel', function() {

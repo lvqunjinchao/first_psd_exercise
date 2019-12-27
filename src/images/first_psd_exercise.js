@@ -121,11 +121,11 @@ function zhuye_ajax() {
 			                        <span>${item.username}</span>
 			                    </div>
 			                    <div class="item_content">
-			                        <img src="${item.content_img}" alt="">
+                                    <img src="${item.content_img}" alt="">
+			                        <p class='type1p'>${item.bottom_p}</p>
 			                    </div>
 			                </a>
 			                <div class="item_bottom">
-			                    <p>${item.bottom_p}</p>
 			                    <div class="guanjianzi_pinglun_box">
 			                        <div class="guanjianzi">
 			                            <a href="javascript:;" class="first_guanjianzi guanjian">${item.guanjianzi1}</a>
@@ -155,10 +155,10 @@ function zhuye_ajax() {
 			                        </div>
 			                        <div class="item_content contentflex">
 			                            <div class="content_left">
-			                                <p class="content_title">
+			                                <div class="content_title limit2">
 			                                ${item.content_title}
-			                                </p>
-			                                <p class="content_content">
+			                                </div>
+			                                <p class="content_content limit2">
 			                                ${item.content_content}
 			                                </p>
 			                            </div>

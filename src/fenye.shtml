@@ -79,12 +79,12 @@
                     <div class="reply js_reply">
                         <div class="o_g">
                             <div class="content">
-                                <div class="reply_title">
-                                    <div class="hot">
+                                <div class="reply_title js_reply_title">
+                                    <div class="hot color2283e2 js_hot">
                                         热门回复
                                         <div class="hengxian"></div>
                                     </div>
-                                    <div class="all">
+                                    <div class="all js_all">
                                         全部回复
                                         <div class="hengxian displaynone"></div>
                                     </div>
